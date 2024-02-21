@@ -70,14 +70,18 @@ const deleteTask = (req, res) => {
 }
 
 const updateTask =(req, res) => {
-  const {title} = req.params
-  const task = tasks.find((task) => task.title === title)
-  if (task) {
-    tasks.splice(tasks.indexOf(task),1)
-    res.json({ message: "Task Deleted"})
-  } else {
-    res.status(404).json({ message: "Not Found"})
-  }
+  // const task = req.body
+  // const {title} = req.params.task.title
+  // const { createdAt} = req.params.task.createdAt
+  // const { completed} = req.params.task.completed
+
+  // tasks.push(task)
+  // if (task) {
+  //   tasks
+  //   res.json({ message: "Task Updated"})
+  // } else {
+  //   res.status(404).json({ message: "Not Found"})
+  // }
 }
 
 
